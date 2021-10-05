@@ -16,8 +16,7 @@ class Equipos extends Validator
     private $voltaje = null;
     private $serie = null;
     private $foto_equipo = null;
-    private $ruta = '../../resources/img/productos/';
-
+    private $ruta = '../resources/img/productos/';
     /*
     *   Métodos para asignar valores a los atributos.
     */
