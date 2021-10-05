@@ -18,10 +18,10 @@ class Database
         $server = 'localhost';
         $database = 'BaseMegafrio';   
         $username = 'postgres';
-        $password = 'fernandojose12';
+        $password = 'admin';
    
         // Se crea la conexión mediante la extensión PDO y el controlador para PostgreSQL.
-        self::$connection = new PDO('pgsql:host='.$server.';dbname='.$database.';port=5432', $username, $password);
+        self::$connection = new PDO('pgsql:  host='.$server.';dbname='.$database.';port=5432', $username, $password);
     }
 
     /*
@@ -98,6 +98,7 @@ class Database
             return false;
         }
     }
+    
 
     /*
     *   Método para obtener todos los registros de una sentencia SQL tipo SELECT.
@@ -149,10 +150,11 @@ class Database
                 self::$error = 'Registro ocupado, no se puede eliminar';
                 break;
             default:
-                //self::$error = 'Ocurrió un problema en la base de datos';
-                self::$error = $message;
+                self::$error = 'Ocurrió un problema en la base de datos';
+                self::$error = $message;    
         }
     }
+    
 
     /*
     *   Método para obtener un error personalizado cuando ocurre una excepción.

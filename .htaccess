@@ -2,8 +2,8 @@
 # | Custom error messages/pages                                        |
 # ----------------------------------------------------------------------
 
-ErrorDocument 403 /SGC-MEGAFRIO/resources/error/403.html
-ErrorDocument 404 /SGC-MEGAFRIO/resources/error/404.html
+ErrorDocument 403 /SGC-MEGAFRIO-App/resources/error/403.html
+ErrorDocument 404 /SGC-MEGAFRIO-App/resources/error/404.html
 
 # ----------------------------------------------------------------------
 # | Error prevention                                                   |
